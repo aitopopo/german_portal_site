@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>語学学習クイズポータル</title>
+    <meta name="description" content="格変化クイズと不規則動詞クイズへのリンク集です。">
+    <style>
+        /* 基本設定 */
+        :root {
+            --primary-color: #4a90e2;
+            --hover-color: #357abd;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ヘッダー */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* メインコンテンツ */
+        main {
+            flex: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        /* カードデザイン */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        /* ボタンデザイン */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--hover-color);
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e0e0e0;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: auto;
+        }
+
+        /* アイコン装飾（CSSのみで作成） */
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>学習クイズポータル</h1>
+        <p>文法事項の定着を確認するためのクイズハブ</p>
+    </header>
+
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <div>
+                    <span class="icon">🧩</span>
+                    <h2>格変化クイズ</h2>
+                    <p>名詞や形容詞の格変化をテストします。<br>正しい形を瞬時に答えるトレーニングに。</p>
+                </div>
+                <a href="https://aitopopo.github.io/kakuhenka/" class="btn" target="_blank" rel="noopener noreferrer">クイズに挑戦する</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="icon">📝</span>
+                    <h2>不規則動詞クイズ</h2>
+                    <p>不規則に変化する動詞の活用形をマスターしましょう。<br>反復練習に最適です。</p>
+                </div>
+                <a href="https://aitopopo.github.io/fukisoku_doshi/" class="btn" target="_blank" rel="noopener noreferrer">クイズに挑戦する</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Language Quiz Hub</p>
+    </footer>
+
+</body>
+</html>
